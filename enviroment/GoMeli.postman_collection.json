@@ -1,0 +1,111 @@
+{
+	"info": {
+		"_postman_id": "9c6a1a22-8c87-4e8a-be65-3da24eabad79",
+		"name": "GoMeli",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "TopSecret",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"satellites\": [\n        {\n            \"name\": \"kenobi\",\n            \"distance\": 100.0,\n            \"message\": [\n                \"este\",\n                \"\",\n                \"\",\n                \"mensaje\",\n                \"\"\n            ]\n        },\n        {\n            \"Name\": \"skywalker\",\n            \"Distance\": 115.5,\n            \"Message\": [\n                \"\",\n                \"es\",\n                \"\",\n                \"\",\n                \"secreto\"\n            ]\n        },\n        {\n            \"Name\": \"sato\",\n            \"Distance\": 142.7,\n            \"Message\": [\n                \"este\",\n                \"\",\n                \"un\",\n                \"\",\n                \"\"\n            ]\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/topsecret/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topsecret",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TopSecret_Split",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"distance\": 100.0,\n    \"message\": [\n        \"este\",\n        \"\",\n        \"\",\n        \"mensaje\",\n        \"\"\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/topsecret_split/?satellite_name=sato",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topsecret_split",
+						""
+					],
+					"query": [
+						{
+							"key": "satellite_name",
+							"value": "sato"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TopSecret_Split",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/topsecret_split/?satellite_name=sato",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topsecret_split",
+						""
+					],
+					"query": [
+						{
+							"key": "satellite_name",
+							"value": "sato"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
