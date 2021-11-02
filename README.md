@@ -26,4 +26,4 @@ SID
 
 
 ### TEST
-Since is build and run project using the code shown in previous section, it's possible to use the following postman collection.
+Since is build and run project using the code shown in previous section, it's possible to use the following postman collection. https://github.com/jlopez34/meli-app/blob/master/enviroment/GoMeli.postman_collection.json
