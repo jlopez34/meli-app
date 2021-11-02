@@ -26,3 +26,4 @@ SID
 
 
 ### TEST
+Since is build and run project using the code shown in previous section, it's possible to use the following postman collection.
